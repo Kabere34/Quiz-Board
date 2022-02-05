@@ -8,43 +8,61 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="quiz">
-      <form name="quiz-frm" id="quiz-frm">
-        <div>
-          <p>Question 1/6</p>
-          <p>What is the correct precedence of the operator in javascript</p>
-          <p><input type="radio" name="qstn1" value="()[].++" />()[].++</p>
-          <p><input type="radio" name="qstn1" value="++.[]()" />++.[]()</p>
-          <p><input type="radio" name="qstn1" value=".++[]()" />.++[]()</p>
-          <p><input type="radio" name="qstn1" value="()++.[" />()++.[</p>
-        </div>
-        <div>
-          <p>Question 2/6</p>
-          <p>Is a variable named ‘apple’ same as ‘Apple’ in Javascript?</p>
-          <p><input type="radio" name="qstn2" value="Yes" />Yes</p>
-          <p><input type="radio" name="qstn2" value="No" />NO</p>
-          <p>
-            <input
-              type="radio"
-              name="qstn2"
-              value="Only when we use ‘strict’"
-            />Only when we use ‘strict’
-          </p>
-        </div>
-        <div>
-          <p>Question 3/6</p>
-          <p>An object is an unordered collection of :</p>
-          <p><input type="radio" name="qstn3" value="values" />values</p>
-          <p><input type="radio" name="qstn3" value="names" />names</p>
-          <p>
-            <input type="radio" name="qstn3" value="Properties" />Properties
-          </p>
-          <p>
-            <input type="radio" name="qstn3" value="All of the above" />All of
-            the above
-          </p>
-        </div>
-      </form>
+    <div class="quiz-container">
+      <div class="quiz">
+        <form name="quiz-frm" id="quiz-frm">
+          <div>
+            <div class="qstn-txt">
+              <p>Question 1/6</p>
+              <p>
+                What is the correct precedence of the operator in javascript
+              </p>
+            </div>
+            <div class="frm-inputs">
+              <p><input type="radio" name="qstn1" value="()[].++" />()[].++</p>
+              <p><input type="radio" name="qstn1" value="++.[]()" />++.[]()</p>
+              <p><input type="radio" name="qstn1" value=".++[]()" />.++[]()</p>
+              <p><input type="radio" name="qstn1" value="()++.[" />()++.[</p>
+            </div>
+          </div>
+
+          <div>
+            <div class="qstn-txt">
+              <p>Question 2/6</p>
+              <p>Is a variable named ‘apple’ same as ‘Apple’ in Javascript?</p>
+            </div>
+            <div class="frm-inputs">
+              <p><input type="radio" name="qstn2" value="Yes" />Yes</p>
+              <p><input type="radio" name="qstn2" value="No" />NO</p>
+              <p>
+                <input
+                  type="radio"
+                  name="qstn2"
+                  value="Only when we use ‘strict’"
+                />Only when we use ‘strict’
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div class="qstn-txt">
+              <p>Question 3/6</p>
+              <p>An object is an unordered collection of :</p>
+            </div>
+            <div class="frm-inputs">
+              <p><input type="radio" name="qstn3" value="values" />values</p>
+              <p><input type="radio" name="qstn3" value="names" />names</p>
+              <p>
+                <input type="radio" name="qstn3" value="Properties" />Properties
+              </p>
+              <p>
+                <input type="radio" name="qstn3" value="All of the above" />All
+                of the above
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
     <a href="html/page.html">Quiz Information</a>
     <script src="script.js"></script>
