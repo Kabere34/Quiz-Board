@@ -7,16 +7,27 @@ body {
   overflow-x: hidden;
   background-color: #caedf8;
 }
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  font-family: "Amatic SC", cursive;
+}
 .quiz {
   border: 1px solid #05c1fc;
   width: 70%;
   background-color: white;
-  margin: 80px 0;
+  margin-bottom: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 60px;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+p,
+h2 {
+  font-family: "Josefin Slab", serif;
 }
 .frm-inputs p {
   border: 1px solid transparent;
