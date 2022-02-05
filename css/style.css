@@ -8,17 +8,18 @@ body {
   background-color: #caedf8;
 }
 .quiz {
-  border: 1px solid black;
+  border: 1px solid #05c1fc;
   width: 70%;
   background-color: white;
-  margin-top: 80px;
+  margin: 80px 0;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 60px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
 }
 .frm-inputs p {
-  border: 1px solid black;
+  border: 1px solid transparent;
   padding: 5px;
   border-radius: 15px;
   margin: 10px 0;
@@ -45,4 +46,16 @@ body {
 }
 .btn {
   padding: 5px 10px;
+  padding: 7px 15px;
+  color: white;
+  background-color: #05c1fc;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  transition-duration: 0.5sec;
+}
+.btn:hover {
+  border: 0.5px solid #05c1fc;
+  background-color: #eaeaea;
+  color: black;
 }
