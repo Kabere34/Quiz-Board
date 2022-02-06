@@ -14,3 +14,15 @@ const handleSelect = (e) => {
 
   console.log("e.value :>> ", e.value, selectedAnswers);
 };
+
+const handleSubmit = () => {
+  let count = 0;
+  Object.keys(corrrectAnswers).forEach((element) => {
+    if (corrrectAnswers[element] === selectedAnswers[element]) {
+      console.log(element);
+      count++;
+    }
+  });
+  let percentage = (count / 6) * 100;
+  percentage = Math.floor(percentage);
+};
