@@ -30,17 +30,17 @@ const handleSubmit = () => {
   if (percentage > 80) {
     document.getElementById(
       "results"
-    ).innerText = `your score is ${percentage}%.You have excellently passed.`;
+    ).innerText = `YOUR SCORE IS ${percentage}%.You have excellently passed.`;
     console.log(" You have excellently passed.");
   } else if (percentage >= 50 && percentage <= 80) {
     document.getElementById(
       "results"
-    ).innerText = `your score is ${percentage}%.You have fairly passed.`;
+    ).innerText = `YOUR SCORE IS ${percentage}%.You have fairly passed.`;
     console.log(" You have fairly passed.");
   } else {
     document.getElementById(
       "results"
-    ).innerText = `your score is ${percentage}%.  You have scored poorly. Retake test!!`;
+    ).innerText = `YOUR SCORE IS ${percentage}%.  You have scored poorly. Retake test!!`;
     console.log(" You have scored poorly. Retake test!!");
   }
 };
