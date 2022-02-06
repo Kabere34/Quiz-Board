@@ -85,6 +85,7 @@ h2 {
   color: black;
 }
 #results {
+  display: none;
   position: absolute;
   width: 300px;
   height: 100px;
