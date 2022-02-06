@@ -8,3 +8,9 @@ const corrrectAnswers = {
 };
 
 let selectedAnswers = {};
+
+const handleSelect = (e) => {
+  selectedAnswers[e.name] = e.value;
+
+  console.log("e.value :>> ", e.value, selectedAnswers);
+};
