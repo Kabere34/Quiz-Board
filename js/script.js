@@ -25,4 +25,28 @@ const handleSubmit = () => {
   });
   let percentage = (count / 6) * 100;
   percentage = Math.floor(percentage);
+  document.getElementById("myModal").style.display = "block";
+
+  if (percentage > 80) {
+    document.getElementById(
+      "results"
+    ).innerText = `your score is ${percentage}%.You have excellently passed.`;
+    console.log(" You have excellently passed.");
+  } else if (percentage >= 50 && percentage <= 80) {
+    document.getElementById(
+      "results"
+    ).innerText = `your score is ${percentage}%.You have fairly passed.`;
+    console.log(" You have fairly passed.");
+  } else {
+    document.getElementById(
+      "results"
+    ).innerText = `your score is ${percentage}%.  You have scored poorly. Retake test!!`;
+    console.log(" You have scored poorly. Retake test!!");
+  }
+};
+window.onclick = function (event) {
+  let modal = document.getElementById("myModal");
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 };
