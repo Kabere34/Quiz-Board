@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Computer club quiz-board</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Slab&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>QUIZ BOARD</h1>
+    <div class="quiz-container">
+      <div class="quiz">
+        <form name="quiz-frm" id="quiz-frm">
+          <div>
+            <div class="qstn-txt">
+              <h2>Question 4/6</h2>
+              <p>In Js 'callstack' refers to which of the following</p>
+            </div>
+            <div class="frm-inputs">
+              <p>
+                <input
+                  onchange="handleSelect(this);"
+                  type="radio"
+                  name="qstn4"
+                  value="Place where code is executed using execution contex"
+                />Place where code is executed using execution context
+              </p>
+              <p>
+                <input
+                  onchange="handleSelect(this);"
+                  type="radio"
+                  name="qstn4"
+                  value="Where objects are stored"
+                />Where objects are stored
+              </p>
+              <p>
+                <input
+                  onchange="handleSelect(this);"
+                  type="radio"
+                  name="qstn4"
+                  value="Both a and b"
+                />Both a and b
+              </p>
+              <p>
+                <input
+                  onchange="handleSelect(this);"
+                  type="radio"
+                  name="qstn4"
+                  value="None of the above"
+                />None of the above
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div class="qstn-txt">
+              <h2>Question 5/6</h2>
+              <p>
+                Which of the following is the correct syntax for array
+                declaration
+              </p>
+            </div>
+            <div class="frm-inputs">
+              <p>
+                <input
+                  onchange="handleSelect(this);"
+                  type="radio"
+                  name="qstn5"
+                  value="const arr={1,2,3,4}"
+                />const arr={1,2,3,4}
+              </p>
+              <p>
+                <input
+                  onchange="handleSelect(this);"
+                  type="radio"
+                  name="qstn5"
+                  value="const arr=[1,2,3,4]"
+                />const arr=[1,2,3,4]
+              </p>
+              <p>
+                <input
+                  onchange="handleSelect(this);"
+                  type="radio"
+                  name="qstn5"
+                  value="Both a and b"
+                />Both a and b
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div class="qstn-txt">
+              <h2>Question 6/6</h2>
+              <p>Which of the following is the pop() method does?</p>
+            </div>
+            <div class="frm-inputs">
+              <p>
+                <input
+                  onchange="handleSelect(this);"
+                  type="radio"
+                  name="qstn6"
+                  value="Display the first element"
+                />Display the first element
+              </p>
+              <p>
+                <input
+                  onchange="handleSelect(this);"
+                  type="radio"
+                  name="qstn6"
+                  value="Decrements length by 1"
+                />Decrements length by 1
+              </p>
+              <p>
+                <input
+                  onchange="handleSelect(this);"
+                  type="radio"
+                  name="qstn6"
+                  value="Increments length by 1"
+                />Increments length by 1
+              </p>
+              <p>
+                <input
+                  onchange="handleSelect(this);"
+                  type="radio"
+                  name="qstn6"
+                  value="None of the mentioned"
+                />None of the mentioned
+              </p>
+
+              <button class="btn"><a href="/index.html">Back </a></button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
