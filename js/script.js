@@ -11,37 +11,32 @@ let selectedAnswers = {};
 
 const handleSelect = (e) => {
   selectedAnswers[e.name] = e.value;
-
-  console.log("e.value :>> ", e.value, selectedAnswers);
 };
 
 const handleSubmit = () => {
   let count = 0;
   Object.keys(corrrectAnswers).forEach((element) => {
     if (corrrectAnswers[element] === selectedAnswers[element]) {
-      console.log(element);
       count++;
     }
   });
   let percentage = (count / 6) * 100;
   percentage = Math.floor(percentage);
+
   document.getElementById("myModal").style.display = "block";
 
   if (percentage > 80) {
     document.getElementById(
       "results"
     ).innerText = `YOUR SCORE IS ${percentage}%.You have excellently passed.`;
-    console.log(" You have excellently passed.");
   } else if (percentage >= 50 && percentage <= 80) {
     document.getElementById(
       "results"
     ).innerText = `YOUR SCORE IS ${percentage}%.You have fairly passed.`;
-    console.log(" You have fairly passed.");
   } else {
     document.getElementById(
       "results"
     ).innerText = `YOUR SCORE IS ${percentage}%.  You have scored poorly. Retake test!!`;
-    console.log(" You have scored poorly. Retake test!!");
   }
 };
 window.onclick = function (event) {
